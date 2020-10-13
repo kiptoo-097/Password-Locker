@@ -22,3 +22,20 @@ class Credential:
         deleteletes saved contact
         '''
         Credential.credential_list.remove(self)
+
+    def test_save_credential(self):
+        pass
+
+    @classmethod
+    def find_by_acnt_username(cls, acnt_username):
+        for credential in cls.credential_list:
+            if credential.acnt_username == acnt_username:
+                return credential
+    # @classmethod
+    # def credential_exists(cls, account_username):
+    #     for credential in cls.credential_list:
+    #         if credential.account_username == account_username:
+    #             return True
+    #         return False
+
+
