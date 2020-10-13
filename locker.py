@@ -17,4 +17,8 @@ class Credential:
         ''' 
         Credential.credential_list.append(self)   
 
-
+    def delete_credential(self):
+        '''
+        deleteletes saved contact
+        '''
+        Credential.credential_list.remove(self)
