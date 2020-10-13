@@ -14,7 +14,11 @@ class User:
         """
         User.user_list.append(self)
 
-
+    def delete_user(self):
+        """
+        delete_user method deletes saved contact
+        """
+        User.user_list.remove(self)
 
 class Credential:
     """
