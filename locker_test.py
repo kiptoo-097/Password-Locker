@@ -7,7 +7,7 @@ class TestUser(unittest.TestCase):
     """
 
     def setUp(self):
-        self.new_user = User("Kiptoo", "1997")
+        self.created_user = User("Kiptoo", "1997")
 
 
     def tearDown(self):
@@ -15,8 +15,8 @@ class TestUser(unittest.TestCase):
 
 
     def test_init(self):
-        self.assertEqual(self.new_user.name, "Kiptoo")
-        self.assertEqual(self.new_user.user_password, "1997")
+        self.assertEqual(self.created_user.name, "Kiptoo")
+        self.assertEqual(self.created_user.user_password, "1997")
 
     def test_save_user(self):
         """
@@ -24,11 +24,11 @@ class TestUser(unittest.TestCase):
         the user list
         """
 
-        self.new_user.save_user()  # saving the new user
+        self.created_user.save_user()  # saving the new user
         self.assertEqual(len(User.user_list), 1)
 
     def test_save_multiple_user(self):
-        self.new_user.save_user()
+        self.created_user.save_user()
         test_user = User("Kevin", "1050")
         test_user.save_user()
         self.assertEqual(len(User.user_list), 2)
@@ -37,11 +37,11 @@ class TestUser(unittest.TestCase):
         """
         test_delete_user to test if we can remove a user from our users list
         """
-        self.new_user.save_user()
+        self.created_user.save_user()
         test_user = User("Kevin", "1050")
         test_user.save_user()
 
-        self.new_user.delete_user()
+        self.created_user.delete_user()
         self.assertEqual(len(User.user_list), 1)
 
 if __name__ == '__main__':
