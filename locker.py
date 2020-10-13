@@ -1,3 +1,14 @@
+class User:
+    """
+    Class that generates new instances of Users
+    """
+    user_list = []
+
+
+
+
+
+
 class Credential:
     """
     Class that generates instances of credential
