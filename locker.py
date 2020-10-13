@@ -37,5 +37,7 @@ class Credential:
     #         if credential.account_username == account_username:
     #             return True
     #         return False
-
+    @classmethod
+    def display_credentials(cls):
+        return cls.credential_list
 
