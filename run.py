@@ -2,7 +2,7 @@
 from locker import User, Credential
 import getpass
 import random
-
+import string
 
 def create_user(name, user_password):
     """
