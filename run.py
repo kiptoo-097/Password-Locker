@@ -213,7 +213,7 @@ def main():
                 print(f"New Credential {account} {acnt_username} {acnt_password} has been created")
                 print("\n")
 
-            elif nav_code == "gp":
+            elif nav_code == "rp":
                 print(
                     "Please enter the account you want to generate password for > ")
                 media_acc = input("Enter account type > ")
@@ -231,7 +231,7 @@ def main():
             elif nav_code == "dc":
 
                 if display_credentials():
-                    print("Here is a list of all your Credentials and passwords")
+                    print("Your Credentials and passwords are")
                     print("\n")
                     for credential in display_credentials():
                         print(f"{credential.account} {credential.acnt_username}{acnt_password}")
@@ -257,8 +257,9 @@ def main():
                 else:
                     print("That credential does not exist")
 
-            elif nav_code == "dl":
-                print("Enter the account username of the credential you would like to delete.")
+            elif nav_code == "xx":
+                print("Enter the username of the credential you would like to delete.")
+                print("Confirm delete")
                 delete_acc = input("> ")
                 my_del = find_credential(delete_acc)
                 Credential.credential_list.remove(my_del)
