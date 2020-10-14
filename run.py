@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.8
 from locker import User, Credential
 import getpass
-
+import random
 
 
 def create_user(name, user_password):
