@@ -5,7 +5,7 @@
  Kiptoo Kennedy
 
 ## Description
-This is a project that enable clients to store and retrieve their credentials upon log-in and create new credentials/passwords and even generate random passwords for different accounts.
+Password Locker is a program that enable user to store and retrieve their credentials upon log-in and create new credentials or passwords and even generate random passwords for different accounts.
 
 ## Features
 * Create account for new user
