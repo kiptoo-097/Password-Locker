@@ -10,12 +10,12 @@ This is a project that enable clients to store and retrieve their credentials up
 ## Features
 * Create account for new user
 * Loggin in
-* Option of computer generated password
+* Option of random password
 * Create new credential
 * Delete credential
 * Display existing credentials
 * Search credential by site name
-* exit for leaving the site
+
 
 ## Behavior Driven Development
 <table>
@@ -26,7 +26,7 @@ This is a project that enable clients to store and retrieve their credentials up
     </tr>
     <tr>
         <td>on load</td>
-        <td>loging/signup </td>
+        <td>new account </td>
         <td>Access to the account</td>
     </tr> 
     <tr>
@@ -48,9 +48,9 @@ This is a project that enable clients to store and retrieve their credentials up
 </table>
 
 ## Setup/Installation requirements
-1.Clone or download and unzip the repository from github https://github.com/
+1.Clone or download and unzip the repository from github https://github.com/kiptoo-097/Password-Locker
 
-2.You can use this command (git clone https://github.com/ ) to clone the project to your machine if you have git .
+2.You can use this command (git clone https://github.com/kiptoo-097/Password-Locker) to clone the project to your machine if you have git .
 
 3.cd into the project folder and open in text editor either code. or atom.
 
